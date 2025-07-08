@@ -5,6 +5,7 @@
  */
 
 // Import all the modules we created
+import './style.css'
 import {
   createTodoItem,
   getCurrentDate,
