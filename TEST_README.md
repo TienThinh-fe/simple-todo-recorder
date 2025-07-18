@@ -3,6 +3,7 @@
 ## Running Tests
 
 1. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -25,12 +26,12 @@ Tests use WebdriverIO's built-in assertions and selectors:
 ```javascript
 // Basic test structure
 describe('My Test Suite', () => {
-    it('should do something', async () => {
-        await browser.url('/');
-        const element = await $('selector');
-        await expect(element).toBeDisplayed();
-    });
-});
+  it('should do something', async () => {
+    await browser.url('/')
+    const element = await $('selector')
+    await expect(element).toBeDisplayed()
+  })
+})
 ```
 
 ## Common Selectors
