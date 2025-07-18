@@ -6,9 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "npx wdio run wdio.conf.js",
+    "test:headless": "npx wdio run wdio.conf.js",
+    "test:visual": "npx wdio run wdio.visual.conf.js",
+    "test:visual-only": "npx wdio run wdio.visual.conf.js --spec ./test/specs/todo.visual.spec.js"
   },
   "devDependencies": {
+    "@wdio/cli": "^9.18.1",
+    "@wdio/local-runner": "^9.18.1",
+    "@wdio/mocha-framework": "^9.18.0",
+    "@wdio/selenium-standalone-service": "^8.14.0",
+    "@wdio/spec-reporter": "^9.18.0",
+    "chromedriver": "^138.0.3",
     "vite": "^7.0.3"
   }
 }
