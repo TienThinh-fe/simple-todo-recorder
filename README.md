@@ -43,8 +43,6 @@ src/
    npm run build
    ```
 
-## For Chrome DevTools Recorder Testing
-
 This application is designed with testing in mind:
 
 - **Clear Element IDs**: All interactive elements have descriptive IDs
@@ -56,20 +54,17 @@ This application is designed with testing in mind:
 ### Suggested Testing Scenarios
 
 1. **Add Todo Flow:**
-
    - Fill out the form with name, priority, and due date
    - Click "Add Todo" button
    - Verify todo appears in the list
 
 2. **Edit Todo Flow:**
-
    - Click "Edit" button on an existing todo
    - Modify values in the modal dialog
    - Click "Save Changes"
    - Verify changes are reflected
 
 3. **Delete Todo Flow:**
-
    - Click "Delete" button on an existing todo
    - Confirm deletion in the dialog
    - Verify todo is removed from the list
